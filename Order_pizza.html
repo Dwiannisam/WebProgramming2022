@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Order Pizza</title>
+</head>
+<body>
+<p><b> Black Goose Bistro | Pizza-on-Demand</b></p>
+<p>Our 12" wood-fired pizzas are avaliable for delivery. build your<br>
+custom pizza and we'll deliver it within an hour.</p>
+
+<p></p><legend><b>Your Information</b></legend>
+<label>Name : <input type="text" name="nama"></label><br>
+<label>Address : <input type="text" name="Adress"></label><br>
+<label>Telephone Number : <input type="text" name="number"></label><br>
+<label>Email : <input type="text" name="Email"></label><br>
+Delivery instructions :<br><textarea name="Delivery instructions" maxlegth="400" cols="40" rows="3"></textarea>
+
+<p><b>Design Your Dream Pizza :</b></p>
+<p>Pizza Specs</p>
+
+<p>Crust (Choose one) :</p>
+<ol>
+<input type="radio" name="list" value="Classic white" checked> Classic white <br>
+<input type="radio" name="list" value="Multigrain" > Multigrain <br>
+<input type="radio" name="list" value="Cheese-stuffed crust" > Cheese-stuffed crust <br>
+<input type="radio" name="list" value="Gluten-free" > Gluten-free
+</ol>
+
+<p>Toppings (Choose as many as you want) :</p>
+<ol>
+<form action="/action_page.php">
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Red Sauce" checked>
+<label for="vehicle1"> Red Sauce </label> <br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="White sauce">
+<label for="vehicle2"> White sauce </label> <br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Mozzarella Cheese">
+<label for="vehicle3"> Mozzarella Cheese </label> <br>
+<input type="checkbox" id="vehicle4" name="vehicle4" value="pepperoni">
+<label for="vehicle4"> pepperoni </label> <br>
+<input type="checkbox" id="vehicle5" name="vehicle5" value="Mushrooms">
+<label for="vehicle5"> Mushrooms </label> <br>
+<input type="checkbox" id="vehicle6" name="vehicle6" value="Peppers">
+<label for="vehicle6"> Peppers </label> <br>
+<input type="checkbox" id="vehicle7" name="vehicle7" value="Anchovies">
+<label for="vehicle7"> Anchovies </label> <br>
+</ol>
+
+<p>Number</p>
+<p><label> How many Pizzas : <input type="number" number="guests" min="1" max="6"></label></p>
+
+<p><input type="submit" value="Bring me a pizza!"> <input type="reset" value="reset"></p>
+
+</form>
+</body>
+</html>

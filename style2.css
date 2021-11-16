@@ -1,0 +1,43 @@
+*{
+    margin: 3px;
+}
+.container{
+    box-sizing: border-box;
+}
+
+.box1{ background-color:yellow; 
+    padding:50px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    float: left;
+}
+.box2{ background-color:red; 
+    padding:50px;
+    width: 545px;
+    height: 20px;
+    border: 1px solid;
+    float: right;
+}
+.box3{ background-color:green; 
+    padding:50px;
+    width: 20px;
+    height: 200px;
+    border: 1px solid;
+    float: left;
+}
+.box4{ background-color:gray; 
+    padding:50px;
+    width: 418px;
+    height: 200px;
+    border: 1px solid;
+    float: left;
+}
+
+.box5{ background-color:blue; 
+    padding:50px;
+    width: 20px;
+    height: 200px;
+    border: 1px solid;
+    float: left;
+}

@@ -1,0 +1,19 @@
+*{
+    margin: 6px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    padding:40px;
+    width: 90px;
+    height: 330px;
+    border: 1px solid;
+}
+.box1{ background-color:yellow; }
+.box2{ background-color :red }
+.box3{ background-color:green; }
+.box4{ background-color:blue; }

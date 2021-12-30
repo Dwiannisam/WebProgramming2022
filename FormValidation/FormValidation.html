@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="form()">
+        <div id="pembungkusValidation">
+            <h1 class="title">Form Validation</h1>
+            <label for="username"><span class="nama">Nama: </span>
+                <input type="text" class="inp" id="username" name="username" required maxlength="30" autocomplete="0">
+            </label><br>
+
+            <label for="email"><span class="nama">Email:</span>
+                <input type="email" class="inp" id="email" name="email" autocomplete="0" required>
+            </label><br>
+
+            <label for="jamBerangkat"><span class="nama">Jam Keberangkatan:</span>
+                <input type="time" class="inp" id="jamBerangkat" name="jamKeberangkatan" autocomplete="0" min="00.00"
+                    max="23.59" required>
+            </label><br>
+
+            <label for="tujuan"><span class="nama">Tujuan:</span>
+                <input type="text" class="inp" id="tujuan" name="tujuan" autocomplete="0" required>
+            </label><br>
+
+            <label for="jumlahTiket"><span class="nama">Jumlah Tiket:</span>
+                <input type="number" class="inp" id="jumlahTiket" name="jumlahTiket" autocomplete="0" required min="0"
+                    max="10">
+            </label>
+            <div class="button">
+                <label for="submit">
+                    <input id="submit" type="submit">
+                </label>
+                <label for="reset">
+                    <input id="reset" type="reset">
+                </label>
+            </div>
+
+        </div>
+
+        <div id="tampilan">
+            <p></p>
+        </div>
+    </form>
+
+    <script>
+        function form() {
+
+let username = document.getElementById("username").value;
+mail = document.getElementById("email").value;
+berangkat = document.getElementById("jamBerangkat").value;
+tujuan = document.getElementById("tujuan").value;
+tiket = document.getElementById("jumlahTiket").value;
+
+let paragraf = document.createElement("p");
+
+event.preventDefault()
+paragraf.innerHTML = "Nama Pelanggan: " + username + '<br>' + "Email: " + mail + '<br>' + "Jam Berangkat: " + berangkat + '<br>' + "Tujuan: " + tujuan + '<br>' + "Tiket: " + tiket
+document.getElementById("tampilan").appendChild(paragraf);
+}
+    </script>
+</body>
+</html>

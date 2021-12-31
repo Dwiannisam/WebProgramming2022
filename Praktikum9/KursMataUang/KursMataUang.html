@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Kurs Mata Uang Asing Ke Rupiah</title>
+    <script>
+      function hitung() {
+        let n1 = Number(document.getElementById("nilai").value);
+        let val = document.getElementById("values").value;
+
+        if (val === "dollar") {
+          document.getElementById("rupiah").value = n1 * 9915;
+        } else if (val === "dollarsing") {
+          document.getElementById("rupiah").value = n1 * 13472;
+        } else if (val === "ringgit") {
+          document.getElementById("rupiah").value = n1 * 874;
+        } else if (val === "yen") {
+          document.getElementById("rupiah").value = n1 * 120;
+        } else if (val === "euro") {
+          document.getElementById("rupiah").value = n1 * 15888;
+        } else if (val === "riyal") {
+          document.getElementById("rupiah").value = n1 * 3592;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Kurs Rupiah-Mata Uang Asing</legend>
+      <table>
+        <tr>
+          <th>Masukkan Nilai</th>
+          <th>Values</th>
+          <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="nilai" value="0" onchange="hitung()" />
+          </td>
+          <td>
+            <select id="values" onchange="hitung()">
+              <option value="dollar">Dollar US</option>
+              <option value="dollarsing">Dollar Singapore</option>
+              <option value="ringgit">Ringgit Malaysia</option>
+              <option value="yen">Yen Jepang</option>
+              <option value="euro">Euro</option>
+              <option value="riyal">Riyal Arab Saudi</option>
+            </select>
+          </td>
+          <td><input type="text" id="rupiah" value="0" /></td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>

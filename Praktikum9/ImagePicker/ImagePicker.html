@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    
+    <label for="alatulis"><b>Alat tulis</b></label>
+    <select id="alatulis" >
+        <option value="buku">Buku</option>
+        <option value="pensil">Pensil</option>
+        <option value="pulpen">Pulpen</option>
+        <option value="penghapus">Penhapus</option>
+        <option value="rautan">Rautan</option>
+        <option value="tipex">Tipex</option>
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button><br>
+    
+    <img id="gambar" width="500px" height="500px">
+
+    <script>
+        
+        function cetakGambar() {
+            const alatulis = document.getElementById('alatulis');
+            const gambar = document.getElementById('gambar');
+
+            if (alatulis.value === 'buku'){
+                gambar.src = 'Buku.jpg'
+                alert ("Ini gambar buku.jpg")
+            }
+            if (alatulis.value === 'pensil') {
+                gambar.src = 'Pensil.webp'
+                alert ("Ini gambar Pensil.jpg")
+            }
+            if (alatulis.value === 'pulpen') {
+                gambar.src = 'Pulpen.webp'
+                alert ("Ini gambar Pulpen.jpg")
+            }
+            if (alatulis.value === 'penghapus') {
+                gambar.src = 'Penghapus.jfif'
+                alert ("Ini gambar Penghapus.jpg")
+            }
+            if (alatulis.value === 'rautan') {
+                gambar.src = 'Rautan.jfif'
+                alert ("Ini gambar Rautan.jpg")
+            }
+            if (alatulis.value === 'tipex') {
+                gambar.src = 'tipex.jfif'
+                alert ("Ini gambar tipex.jpg")
+            }
+        }
+    </script>
+</body>
+</html>

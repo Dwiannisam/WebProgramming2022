@@ -1,0 +1,2 @@
+1. buat js alert succes true false
+2. buat lowongan kerja
